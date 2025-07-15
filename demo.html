@@ -127,9 +127,9 @@
     </div>
 
     <div class="demo-item">
-        <div class="rectangle" style="--continuous-rounding: 10rem;
-                                      --continuous-rounding-bottom-right: 0;
-                                      --continuous-rounding-bottom-left: 0;">
+        <div class="rectangle" style="--continuous-rounding: 15rem;
+                                      --continuous-rounding-bottom-right: 0px;
+                                      --continuous-rounding-bottom-left: 0px;">
             <div class="label">
                 <span>200 × 200</span>
                 <span class="radius-value">omit corners</span>
@@ -145,6 +145,26 @@
             <div class="label">
                 <span>200 × 200</span>
                 <span class="radius-value">complete custom corners</span>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Example to use the library within CSS classes */
+
+        .my__class {
+        /* your other class styles go here */
+        /* the .continuous-rounding class must be attached to the element, too */
+        --continuous-rounding-top-left: 50px;
+        --continuous-rounding-bottom-left: 50px;
+        }
+    </style>
+
+    <div class="demo-item">
+        <div class="rectangle continuous-rounding my__class">
+            <div class="label">
+                <span>200 × 200</span>
+                <span class="radius-value">class based styling</span>
             </div>
         </div>
     </div>

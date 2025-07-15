@@ -28,12 +28,11 @@
     initial-value: none;
 }
 
-*[style*="--continuous-rounding"] {
+*[style*="--continuous-rounding"],
+.continuous-rounding {
     -webkit-mask-image: paint(continuous-corner);
     mask-image: paint(continuous-corner);
-}
-
-.rectangle[style*="--continuous-rounding"] {
-    -webkit-mask-image: paint(continuous-corner);
-    mask-image: paint(continuous-corner);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
 }
